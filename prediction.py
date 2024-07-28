@@ -1,13 +1,16 @@
 import pandas as pd
 import pickle
 
+# Memuat encoder dari file pickle
+with open('./model/label_encoder.pkl', 'rb') as f:
+    encoders = pickle.load(f)
+
+# load model    
+model = pickle.load(open('./model/best_model.pkl', 'rb'))
+
 def label_encoder(data):
 
   col_cat = data.select_dtypes(include=['object']).columns
-
-  # Memuat encoder dari file pickle
-  with open('./model/label_encoder.pkl', 'rb') as f:
-      encoders = pickle.load(f)
 
   # Transform kolom kategori di data menggunakan encoder yang sudah dilatih
   for col in col_cat:
@@ -16,7 +19,6 @@ def label_encoder(data):
   return data
 
 def predict_attrition(data):
-  model = pickle.load(open('./model/best_model.pkl', 'rb'))
   y_pred = model.predict(data)
 
   if y_pred == 1:
