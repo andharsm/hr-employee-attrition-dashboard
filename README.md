@@ -1,5 +1,7 @@
 # **Model Prediksi & Dashboard Employee Attrition**
 
+![andharsm-dashboard](https://github.com/user-attachments/assets/d557fdfb-ebae-46b9-92b0-d72de7e2ff5c)
+
 ## **Business Understanding**
 
 Employee attrition, atau tingkat pengunduran diri karyawan, merupakan isu penting yang dihadapi banyak organisasi di berbagai industri. Tingginya tingkat pengunduran diri dapat mengakibatkan peningkatan biaya rekrutmen dan pelatihan, penurunan produktivitas, serta hilangnya pengetahuan dan keterampilan yang berharga. Oleh karena itu, memahami faktor-faktor yang mempengaruhi employee attrition dan mengembangkan model prediksi yang efektif menjadi sangat krusial bagi keberlanjutan dan kesuksesan organisasi.
